@@ -14,6 +14,7 @@ public class Test {
 //		XYChart chart1 = new XYChartBuilder().width(800).height(600).theme(ChartTheme.Matlab).build();
 		Polynom p1 =new Polynom("4x^5+4");
 		Monom m12= new Monom("0x^4");
+		//System.out.println(p1);
 		///testing***
 ////		p1.add(m11);
 ////		p1.add(m12);

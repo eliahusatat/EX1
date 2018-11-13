@@ -27,6 +27,7 @@ public class GraphPlot extends JFrame {
     public GraphPlot() throws IOException {
 
         Polynom p =new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");
+    	//Polynom p =new Polynom("x^3+3-x");
         System.out.println(p.AreaBelow(-2, 6));
         Polynom p1=(Polynom) p.derivative();
         DataTable data = new DataTable(Double.class, Double.class);
@@ -36,7 +37,7 @@ public class GraphPlot extends JFrame {
         for (double x = start; x <= end; x+=0.001) {
             double y = p.f(x);
             data.add(x, y);
-            //FINDING THE MAX MIN POINT ON ENTHER DATA
+            //FINDING THE MAX MIN POINTs >> ON ENTHER DATA
             //the derivative value
             double y1=p1.f(x);
             double y2=p1.f(x+0.001);
@@ -48,6 +49,7 @@ public class GraphPlot extends JFrame {
             	MaxMin.add(m1,m2);
             }
         }
+         
         //
         DataSource filtered = new Convolution(data, null, Mode.REPEAT, 1);
         // adding XYPlot with both data table 
@@ -69,7 +71,7 @@ public class GraphPlot extends JFrame {
     public static void main(String[] args) throws IOException {
     	GraphPlot df = new GraphPlot();
         df.setVisible(true);
-        Polynom p =new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");
+        Polynom p =new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");   
         System.out.println("the area below x: "+p.AreaBelow(-2, 6));
     }
 }
