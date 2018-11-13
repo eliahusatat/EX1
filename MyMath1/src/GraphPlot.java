@@ -25,7 +25,7 @@ import de.erichseifert.gral.ui.InteractivePanel;
 public class GraphPlot extends JFrame {
 
     /**
-	 * 
+	 * adding version
 	 */
 	private static final long serialVersionUID = 1L;
 
