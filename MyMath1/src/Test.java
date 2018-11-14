@@ -16,7 +16,7 @@ public class Test {
 //		String[] parts1 = newS.split("(?=\\+|\\-)");
 //		System.out.println(Arrays.toString(parts1));;
 //		System.out.println(newS);
-		
+//		
 ///*	
 		//////////////////////////////the monom class/////////////////////////
 		Monom m2 = new Monom("-6x^4");

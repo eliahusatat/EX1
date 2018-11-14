@@ -30,7 +30,6 @@ public class GraphPlot extends JFrame {
 	 * this class only demonstrat the plotting of the polynom -"0.2x^4-1.5x^3+3.0x^2-x-5"
 	 * but you can plot any polynom in the same way - just chang "p" to be your polynom
 	 * and choose start and end for the limit of the plot
-	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
