@@ -11,68 +11,13 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-//		XYChart chart1 = new XYChartBuilder().width(800).height(600).theme(ChartTheme.Matlab).build();
-		//Polynom p1 =new Polynom("4x^5+4");
-		//Monom m12= new Monom("0x^4");
-		//System.out.println(p1);
-		///testing***
-////		p1.add(m11);
-////		p1.add(m12);
-////		System.out.println(p1);
-//		//Polynom m1 =new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");
-//		Polynom m1 =new Polynom("x^2");
-//		//System.out.println(m1.areaBelow(-2, 6));
-//		//System.out.println(m1);
-//		double start=-2;
-//		double end=2;
-//		double lengh=end-start;
-//		double eps=0.1;
-//		double[] xData = new double[(int) (lengh/eps)];
-//		double[] yData = new double[(int) (lengh/eps)];
-//		double x =start;
-//		for (int i = 0; i < yData.length; i++) {
-//			
-//			xData[i]=x;
-//			yData[i]=m1.f(x);
-//			x=x+0.1;
-//		}
-////		double[] xData = new double[] { -5.0, 6.0, 20.0 };
-////		double[] yData = new double[] { 2.0, 1.0, 0.0 };
-//
-//		// Create Chart
-//		XYChart chart = QuickChart.getChart("the graph of the polynom :"+m1.toString(), "X", "Y", "y(x)", xData, yData);
-//		//chart.getStyler().setYAxisGroupPosition(yAxisGroup, yAxisPosition);
-//		//chart.getStyler().setYAxisGroupPosition(axisGroup, Styler.YAxisPosition.Right);
-//		//chart.getStyler().setYAxisGroupPosition(10, Styler.YAxisPosition.Right);
-//		// Show it
-//		new SwingWrapper(chart).displayChart();
-//
-//		// Save it
-//		try {
-//			BitmapEncoder.saveBitmap(chart, "./Sample_Chart", BitmapFormat.PNG);
-//		} catch (IOException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
-//
-//		// or save it in high-res
-//		try {
-//			BitmapEncoder.saveBitmapWithDPI(chart, "./Sample_Chart_300_DPI", BitmapFormat.PNG, 300);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		String s=m1.toString();
-//		System.out.println(s);
-		//System.out.println("test");
-		//System.out.println("test1");
+
+//		String newS ="x^4+x^2-3"; 
+//		String[] parts1 = newS.split("(?=\\+|\\-)");
+//		System.out.println(Arrays.toString(parts1));;
+//		System.out.println(newS);
 		
-		//String newS ="x^4+x^2-3"; 
-		//String[] parts1 = newS.split("(?=\\+|\\-)");
-		//System.out.println(Arrays.toString(parts1));;
-		//System.out.println(newS);
-		
-/*	
+///*	
 		//////////////////////////////the monom class/////////////////////////
 		Monom m2 = new Monom("-6x^4");
 		//Checking the function toString+constructor
@@ -147,14 +92,13 @@ public class Test {
 		}
 
 		System.out.println(m21.f(1));//Checking the function f(x)
-		m11.substract(m15);
 		System.out.println(m11);//Checking the function subtract Monom
 		m31=m11.copy();
 		System.out.println(m31);//Checking the function copy
 		m31=m11.derivative();
 		System.out.println(m31);//Checking the function derivative
 
-*/
+//*/
 	}
 	private static String newString(String s) {
 

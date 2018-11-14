@@ -388,6 +388,16 @@ public class Polynom implements Polynom_able{
 		}
 		return sum;
 	}
+	
+	
+	/**
+	 * calculate the area Below axis x of this polynom between x0 and x1
+	 * Assuming x0<x1
+	 * note if eps>1 eps=1
+	 * @throws x0>x1
+	 * @param double x0, double x1, double eps
+	 * @return double
+	 */
 	public double AreaBelow (double x0, double x1) {
 		if(x0>x1){throw new RuntimeException("x0>x1"); }
 		if(x0==x1)return 0;
@@ -399,7 +409,7 @@ public class Polynom implements Polynom_able{
 			Partition=Partition+eps;  //going to the next Rectangle
 			if(this.f(Partition)<=0) {  // if its above axis x
 				mid=Partition-eps/2;
-				sum= sum + eps*f(mid)*(-1);
+				sum= sum + eps*f(mid)*(-1);// make the area positive 
 			}
 		}
 		return sum;

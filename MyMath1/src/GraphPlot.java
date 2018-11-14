@@ -25,7 +25,12 @@ import de.erichseifert.gral.ui.InteractivePanel;
 public class GraphPlot extends JFrame {
 
     /**
-	 * adding version
+	 * in this class we added the library -"gral" for plotting the polynom
+	 * @see https://github.com/eseifert/gral
+	 * this class only demonstrat the plotting of the polynom -"0.2x^4-1.5x^3+3.0x^2-x-5"
+	 * but you can plot any polynom in the same way - just chang "p" to be your polynom
+	 * and choose start and end for the limit of the plot
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -33,7 +38,7 @@ public class GraphPlot extends JFrame {
 
         Polynom p =new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");
     	//Polynom p =new Polynom("x^3+3-x");
-        System.out.println(p.AreaBelow(-2, 6));
+        System.out.println(p.AreaBelow(-12, 16));
         Polynom p1=(Polynom) p.derivative();
         DataTable data = new DataTable(Double.class, Double.class);
         DataTable MaxMin = new DataTable(Double.class, Double.class);
